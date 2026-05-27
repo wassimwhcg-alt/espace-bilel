@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ESPACE BILEL | Architectural Hair Artistry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#e0c29a",
+                        "surface": "#131313",
+                        "on-tertiary": "#31302d",
+                        "outline-variant": "#4d463c",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-container": "#afaca7",
+                        "surface-container": "#201f1f",
+                        "on-primary-fixed-variant": "#584325",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-highest": "#353534",
+                        "tertiary": "#cbc7c2",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "error-container": "#93000a",
+                        "sand-mist": "#C8BFB3",
+                        "obsidian-deep": "#080706",
+                        "secondary-fixed": "#f9dec5",
+                        "inverse-primary": "#715b3a",
+                        "background": "#131313",
+                        "primary": "#e1c39b",
+                        "on-tertiary-container": "#41403c",
+                        "outline": "#998f84",
+                        "primary-fixed": "#fddeb5",
+                        "secondary": "#dbc2aa",
+                        "on-secondary": "#3d2d1d",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed-dim": "#dbc2aa",
+                        "on-secondary-fixed": "#261909",
+                        "paper-white": "#F8F4EE",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#554431",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "on-background": "#e5e2e1",
+                        "primary-container": "#c4a882",
+                        "on-primary-fixed": "#281901",
+                        "tertiary-fixed": "#e6e2dc",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "surface-tint": "#e0c29a",
+                        "error": "#ffb4ab",
+                        "surface-variant": "#353534",
+                        "on-primary-container": "#513d1f",
+                        "on-primary": "#3f2d11",
+                        "on-surface": "#e5e2e1",
+                        "secondary-container": "#554431",
+                        "surface-bright": "#3a3939",
+                        "on-error": "#690005",
+                        "metallic-gold": "#C4A882",
+                        "inverse-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "on-surface-variant": "#d0c5b8",
+                        "on-secondary-container": "#c9b199",
+                        "surface-dim": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "margin-mobile": "24px",
+                        "element-gap": "24px",
+                        "gutter": "32px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["DM Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-md": ["DM Sans"],
+                        "label-caps": ["DM Sans"],
+                        "quote": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.8", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                        "display-lg": ["84px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-xl": ["60px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.7", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.5", "letterSpacing": "0.2em", "fontWeight": "700"}],
+                        "quote": ["32px", {"lineHeight": "1.4", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e; /* surface-container-lowest */
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .editorial-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(196, 168, 130, 0.2), transparent);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .letter-spacing-huge {
+            letter-spacing: 0.5em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 mix-blend-difference px-margin-mobile md:px-margin-desktop py-8 flex justify-between items-center">
+<span class="font-headline-lg text-2xl tracking-tighter text-white">ESPACE BILEL</span>
+<div class="hidden md:flex gap-12">
+<a class="font-label-caps text-[10px] text-white/70 hover:text-white transition-colors" href="#">ARTISTRY</a>
+<a class="font-label-caps text-[10px] text-white/70 hover:text-white transition-colors" href="#">ARCHIVE</a>
+<a class="font-label-caps text-[10px] text-white/70 hover:text-white transition-colors" href="#">STUDIO</a>
+</div>
+<a class="font-label-caps text-[10px] border border-white/30 px-6 py-2 text-white hover:bg-white hover:text-black transition-all" href="#booking">RESERVE</a>
+</nav>
+<!-- 1. Immersive Hero -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero" class="w-full h-full object-cover brightness-[0.7] scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uiB3CrUVAjh9eo_RIxBAMz0J_j29bFH8rdZGaXSvTgiTEoM2033t8rqB5OzfgGZHirHqGZJSyvbMA6d0dbviReSB8RJLqpIZUAaLjvEcr7IFSNJi3_Oj-uhR87pN6ekjwHo4fZ5anppvFGE6ol1HGCHutmjQfbryCIHg3pm-Ljvoc7LeY_3_VGdAo9VOFeG7E_QXQ6SlIgh53H7y7ynwQkXfvP6jOIlqbliN2mi1EuHf2z2lCeiY84IIh9U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-deep via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.6em] mb-6 block">ARCHITECTURAL STYLING</span>
+<h1 class="font-display-lg text-white mb-12 max-w-5xl mx-auto leading-[1] text-5xl md:text-8xl">
+            THE ART OF TRANSFORMATION
+        </h1>
+<div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+<a class="font-label-caps text-label-caps border border-primary/40 px-12 py-5 text-primary hover:bg-primary hover:text-obsidian-deep transition-all tracking-[0.3em]" href="#booking">
+                RESERVE NOW
+            </a>
+</div>
+</div>
+</section>
+<!-- 2. Brand Philosophy -->
+<section class="bg-surface py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="reveal-on-scroll">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Philosophy" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida/ADBb0uizNo5RTMf4myu5rZX5OixwsSp7r00bKJyt39W-JO-4RkZDWft5OemlShEgTemeeR-Iv1a_5auhnF2PjYrp0TwAK2gMeRzhpfzZm4QS_XVe1LQmGQ64RFwipMwakSS_uJDNaKZ10Jfqv2bZNKUa7n7vwHOI_4nJ_kllexgZzeXGUfSGHz0s0tEz6rKA9tUBrdJ7aFZHlF8C2_ejjyqKNGKAutVFtPAl8K27-s5IMyrZxCK3FZAQEWl1IRhv"/>
+</div>
+</div>
+<div class="reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-primary mb-8 block tracking-widest">MANIFESTO</span>
+<h2 class="font-headline-xl text-headline-xl mb-12 leading-tight">BILEL TROY: <br/><span class="italic font-light">L'essence du Cheveu</span></h2>
+<div class="space-y-10 max-w-xl">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Bilel Troy n'est pas qu'un coiffeur ; c'est un architecte de l'image. Reconnu pour sa vision singulière, il sculpte chaque chevelure comme une œuvre d'art, fusionnant technique de pointe et intuition esthétique.
+                </p>
+<div class="editorial-line"></div>
+<p class="font-quote text-2xl text-primary/80 italic leading-snug">
+                    "Ma mission est de révéler l'identité profonde de chaque femme à travers une transformation qui transcende les tendances éphémères."
+                </p>
+<div class="flex items-center gap-4 pt-6">
+<span class="font-label-caps text-[10px] text-white/40">92,000 VISIONARIES</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Signature Services Grid -->
+<section class="bg-obsidian-deep py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-7xl mx-auto">
+<div class="mb-32 text-center reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.4em]">EXPERTISE</span>
+<h2 class="font-headline-xl text-headline-xl mt-6">SIGNATURE SERVICES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16 reveal-on-scroll">
+<!-- Service 1 -->
+<div class="border-b border-outline-variant/20 pb-12 group">
+<div class="flex justify-between items-baseline mb-6">
+<h3 class="font-headline-lg text-2xl group-hover:text-primary transition-colors">Custom Balayage &amp; Color</h3>
+<span class="font-label-caps text-[11px] text-primary">FROM 250 TND</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-md">The core of Bilel's artistry. Seamless, hand-painted gradients designed for longevity and natural light reflection.</p>
+</div>
+<!-- Service 2 -->
+<div class="border-b border-outline-variant/20 pb-12 group">
+<div class="flex justify-between items-baseline mb-6">
+<h3 class="font-headline-lg text-2xl group-hover:text-primary transition-colors">Haute Coiffure &amp; Styling</h3>
+<span class="font-label-caps text-[11px] text-primary">FROM 120 TND</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-md">Precision cutting and architectural styling tailored to your facial structure and personal identity.</p>
+</div>
+<!-- Service 3 -->
+<div class="border-b border-outline-variant/20 pb-12 group">
+<div class="flex justify-between items-baseline mb-6">
+<h3 class="font-headline-lg text-2xl group-hover:text-primary transition-colors">Luxury Hair Treatments</h3>
+<span class="font-label-caps text-[11px] text-primary">FROM 180 TND</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-md">Exclusive molecular protocols that restore hair health and shine from within using premium global brands.</p>
+</div>
+<!-- Service 4 -->
+<div class="border-b border-outline-variant/20 pb-12 group">
+<div class="flex justify-between items-baseline mb-6">
+<h3 class="font-headline-lg text-2xl group-hover:text-primary transition-colors">Nail Artistry</h3>
+<span class="font-label-caps text-[11px] text-primary">FROM 80 TND</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-md">Refined manicures and bespoke nail designs that complement the luxury salon experience.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. High-Fashion Lookbook -->
+<section class="bg-surface overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 reveal-on-scroll">
+<div class="aspect-[3/4] overflow-hidden group">
+<img alt="Lookbook 1" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uizNo5RTMf4myu5rZX5OixwsSp7r00bKJyt39W-JO-4RkZDWft5OemlShEgTemeeR-Iv1a_5auhnF2PjYrp0TwAK2gMeRzhpfzZm4QS_XVe1LQmGQ64RFwipMwakSS_uJDNaKZ10Jfqv2bZNKUa7n7vwHOI_4nJ_kllexgZzeXGUfSGHz0s0tEz6rKA9tUBrdJ7aFZHlF8C2_ejjyqKNGKAutVFtPAl8K27-s5IMyrZxCK3FZAQEWl1IRhv"/>
+</div>
+<div class="aspect-[3/4] overflow-hidden group bg-obsidian-deep flex items-center justify-center p-12 text-center">
+<div class="reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-primary block mb-6">CURATED LOOKS</span>
+<h3 class="font-headline-lg text-3xl mb-8">THE EDITORIAL COLLECTION</h3>
+<div class="editorial-line w-24 mx-auto mb-8"></div>
+<p class="font-body-md text-on-surface-variant italic">Refining the boundaries of modern beauty.</p>
+</div>
+</div>
+<div class="aspect-[3/4] overflow-hidden group">
+<img alt="Lookbook 2" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uixLzBMnkMflW5J45d6pi3v2kcN0V4o2M0tsfnUMjhIYYRhwpBWPrt7h97jc5TdNAtijliMjvk58S0EcNyMXFYvZgVwnt0nnmKn_KnFMNMyil-QvtkuJdyzX9mtlYsH55PL8JQgQW6h_WoDpGHABQPgbvR-v8bz9UDOj9csClfSRA71odxeMocO2z1aK0GQjWflOMdrNZ0em8Iz2fvPTyNz_kEWXBfpgQXHR7B01_DN6RqXv82fWgoTwPlt"/>
+</div>
+</div>
+</section>
+<!-- 5. Refined Testimonials -->
+<section class="bg-surface py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-4xl mx-auto text-center reveal-on-scroll">
+<span class="material-symbols-outlined text-primary text-5xl mb-12" style="font-variation-settings: 'FILL' 1">format_quote</span>
+<div class="space-y-24">
+<div>
+<p class="font-headline-lg text-3xl md:text-4xl italic mb-8 leading-snug">"The transformation was beyond my expectations. Bilel has a way of seeing color that I've never experienced in any other salon in Tunis."</p>
+<cite class="font-label-caps text-label-caps text-primary tracking-widest not-italic">— SOPHIE M.</cite>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Studio & Contact Section -->
+<section class="bg-obsidian-deep py-section-gap px-margin-mobile md:px-margin-desktop" id="booking">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-6">RESERVATIONS</span>
+<h2 class="font-headline-xl text-headline-xl mb-12">BEGIN YOUR JOURNEY</h2>
+<div class="space-y-12">
+<div class="group">
+<span class="font-label-caps text-[11px] text-white/40 block mb-2">WHATSAPP ENQUIRIES</span>
+<a class="font-headline-lg text-3xl hover:text-primary transition-colors" href="tel:21122061">21 122 061</a>
+</div>
+<div class="group">
+<span class="font-label-caps text-[11px] text-white/40 block mb-2">INSTAGRAM DIRECT</span>
+<a class="font-headline-lg text-3xl hover:text-primary transition-colors" href="#">@BILELTROY_</a>
+</div>
+<div class="pt-8">
+<button class="bg-primary text-obsidian-deep font-label-caps text-label-caps px-12 py-5 tracking-[0.3em] hover:bg-white transition-all">REQUEST QUOTE</button>
+</div>
+</div>
+</div>
+<div class="reveal-on-scroll relative mt-24 lg:mt-0">
+<div class="absolute inset-0 border border-primary/20 -translate-x-6 translate-y-6 -z-10"></div>
+<div class="aspect-square bg-surface-container-low flex flex-col justify-center p-16">
+<h4 class="font-headline-lg text-2xl mb-8 text-primary">The Studio</h4>
+<p class="font-body-lg text-on-surface-variant mb-12 leading-relaxed">
+                    A private sanctuary designed for total immersion in beauty. Located in the heart of Riadh Ennasr, every appointment is a strictly curated experience.
+                </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-label-caps text-[11px] tracking-widest">RIADH ENNASR, ARIANA</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-24 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col items-center">
+<h2 class="font-headline-xl text-5xl mb-16 tracking-tighter">ESPACE BILEL</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 w-full text-center md:text-left">
+<div>
+<span class="font-label-caps text-[10px] text-primary block mb-6 tracking-widest uppercase">LOCATION</span>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                    Avenue Hédi Nouira 126,<br/>
+                    Ennasr, Tunis
+                </p>
+</div>
+<div class="text-center">
+<span class="font-label-caps text-[10px] text-primary block mb-6 tracking-widest uppercase">CONNECT</span>
+<div class="flex justify-center gap-8">
+<a class="font-label-caps text-[10px] hover:text-primary transition-colors" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-[10px] hover:text-primary transition-colors" href="#">FACEBOOK</a>
+</div>
+</div>
+<div class="md:text-right">
+<span class="font-label-caps text-[10px] text-primary block mb-6 tracking-widest uppercase">LEGAL</span>
+<p class="font-body-md text-on-surface-variant">© 2024 ARCHITECTURAL HAIR ARTISTRY</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB -->
+<a class="md:hidden fixed bottom-8 right-8 bg-primary text-obsidian-deep w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50" href="tel:21122061">
+<span class="material-symbols-outlined">call</span>
+</a>
+<script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+</body></html>
